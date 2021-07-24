@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const {filterByQuery} = require('../../lib/notes')
+const {filterByQuery, createNewNote} = require('../../lib/notes')
 const {notes} = require('../../data/notes.json');
 
 router.get('/notes', (req, res) => {
@@ -8,6 +8,11 @@ router.get('/notes', (req, res) => {
         results = filterByQuery(req.query, results);
     };
     res.json(results);
+});
+
+router.post('/notes', (req, res) => {
+    const note = createNewNote(req.body, notes);
+    res.json(note);
 });
 
 module.exports = router;
