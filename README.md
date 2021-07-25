@@ -8,14 +8,16 @@ This is a server based note taking app.
 
 ## Table of Contents:
 
+* [Installation](#installation)
 * [Usage](#usage)
 * [Tests](#tests)
 * [Packages](#packages)
 * [Demo](#demo)
 
+## Installation
+Click [here](https://fast-meadow-85905.herokuapp.com/) to access the app. (No installation needed.)
 
 ## Usage:
-* Click [here](https://fast-meadow-85905.herokuapp.com/) to access the app.
 * Add and/or delete your notes.
 * Check out [demo](#demo).
 
